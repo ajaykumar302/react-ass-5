@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Hoc from './Hoc';
 
-function App() {
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <h1>HOC</h1>
+     <p>1.A high-order component(HOC) is an advanced technique in React for reusing component logic.</p>
+     <p>2.HOC is a pure function with Zero side-effects and doesn't modify the input component.</p>
+    <h2>Defination:</h2> 
+    <span>HOC is a function that takes a components and returns a new components.The returned component contains the WrappedComponent as a child.</span>
+     <Hoc/>
+     <div className="ex">Example:</div>
+     
+     <h1>Welcome User!!!{props.name}</h1>
+
     </div>
+   
   );
 }
 
-export default App;
+export default Hoc(App);
