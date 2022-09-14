@@ -1,11 +1,12 @@
 import './App.css';
 import Hoc from './Hoc';
+import Parent from './PureComponent/Parent';
 
 
 function App(props) {
   return (
     <div>
-    <h1>HOC</h1>
+    <h1 className="title">HOC</h1>
      <p>1.A high-order component(HOC) is an advanced technique in React for reusing component logic.</p>
      <p>2.HOC is a pure function with Zero side-effects and doesn't modify the input component.</p>
     <h2>Defination:</h2> 
@@ -14,7 +15,7 @@ function App(props) {
      <div className="ex">Example:</div>
      
      <h1>Welcome User!!!{props.name}</h1>
-
+       <Parent />
     </div>
    
   );

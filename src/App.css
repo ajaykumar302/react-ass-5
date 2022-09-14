@@ -1,10 +1,13 @@
 body{
   background-image:linear-gradient(pink,rgb(175, 175, 246),yellow,green) ;
   background-repeat:no-repeat ;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
 }
 .ex{
   font-size: x-large;
   color: blue;
+}
+.title{
+  color: rgb(255, 0, 0);
 }
